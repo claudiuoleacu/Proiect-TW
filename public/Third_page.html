@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Introducere în lumea fractalilor">
+    <meta name="keywords" content="Fractali, Teoria haosului">
+    <meta name="author" content="Oleacu Claudiu-Angel">
+    <title>Setul Mandelbrot</title>
+    <link href="Style_First_page.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Vollkorn&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Chonburi&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <h1 id="titlu">
+                Fractals Wonderland
+            </h1>
+            <p class="citat" id = "citat_mod">
+                "Norii nu sunt sfere, muntii nu sunt conuri, liniile de coasta nu sunt cercui,<br>
+                iar scoarta copacilor nu este neteda si nici fulgerul nu cade în linii drepte."
+            </p>
+            <p class="citat">
+                Benoit Mandelbrot
+            </p>
+        </div>
+    </header>
+
+    <div class="area">
+        <ul class="shapes">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+    <nav class="topnav" id="navbar">
+        <li><a href="First_page.html"><i class="fa fa-home"></i></a></li>
+        <li><a href="Second_page.html" id="pg2">Triunghiul lui Sierpinski</a></li>
+        <li><a href="Third_page.html" id="pg3" class="active">Setul Mandelbrot</a></li>
+        <li><a href="form_bs.html" id="pg4">Formular</a></li>
+        <li class="dropdown">
+            <a class="dropbtn" href="javascript:void(0)" style="width: 120px;">Link-uri utile<i
+                    class="fa fa-lightbulb-o"></i></a>
+            <div class="dropdown-content">
+                <a href="https://ro.wikipedia.org/wiki/Fractal">Wikipedia</a>
+                <a href="https://fractalfoundation.org/resources/what-are-fractals/">Fractal Foundation</a>
+                <a href="https://mathigon.org/course/fractals/introduction">Mathigon</a>
+            </div>
+        </li>
+    </nav>
+
+    <div class="row">
+        <section class="content">
+            <h2 class="titluri_sectiuni">
+                Ce este setul Mandelbrot? Cine a fost Mandelbrot?
+            </h2>
+            <article>
+                Mulțimea lui Mandelbrot este un fractal care a devenit cunoscut în afara matematicii atât pentru
+                estetica sa, cât și pentru structura complicată, care are la bază o definiție simplă. Acest lucru se
+                datorează în mare parte eforturilor lui Benoît Mandelbrot și ale altora de a populariza acest domeniu al
+                matematicii. Mulțimea lui Mandelbrot se definește ca fiind mulțimea acelor puncte c din planul complex
+                pentru care aplicând în mod repetat polinomul complex z<sup>2</sup> + c (pornind de la z = 0) rezultatul
+                rămâne în
+                interiorul unui disc de rază finită.
+                <img class="fi" src="https://www.codingame.com/servlet/fileservlet?id=13848520651734">
+                <figcaption class="descriere_img">Fig.1 - Setul Mandelbrot original</figcaption>
+            </article>
+            <h3>Benoit Mandelbrot</h3>
+            <article>
+                Benoit B. Mandelbrot (20 noiembrie 1924 - 14 octombrie 2010) a fost un matematician
+                francez-american de origine poloneză și polimat, cu interese largi în științele practice, în special în
+                ceea ce îl eticheta drept „arta rugozitatea "fenomenelor fizice și" elementul necontrolat din viață".
+                El s-a denumit „fractalist” și este recunoscut pentru contribuția sa la câmpul
+                geometriei fractale, care a inclus inventarea cuvântului „fractal”, precum și dezvoltarea unei teorii a
+                „asprimea și asemănarea de sine ” în natură.<br>
+                În 1936, pe când era copil, familia lui Mandelbrot a emigrat în Franța din Varșovia , Polonia. După
+                încheierea celui de-al doilea război mondial, Mandelbrot a studiat matematica, absolvind universitățile
+                din Paris și Statele Unite și obținând un master în aeronautică de la Institutul de Tehnologie din
+                California. A petrecut cea mai mare parte a carierei sale atât în ​​Statele Unite, cât și în Franța,
+                având dublă cetățenie franceză și americană. În 1958, a început o carieră de 35 de ani la IBM, unde a
+                devenit Fellow IBM și a luat periodic concedii pentru a preda la Universitatea Harvard. La Harvard, în
+                urma publicării studiului său privind piețele de mărfuri din SUA în legătură cu contractele futures de
+                bumbac, a predat economie și științe aplicate.<br>
+                Datorită accesului său la computerele IBM, Mandelbrot a fost unul dintre primii care a folosit grafica
+                computerizată pentru a crea și afișa imagini geometrice fractale, ceea ce a dus la descoperirea setului
+                Mandelbrot în 1980. El a arătat cum complexitatea vizuală poate fi creată din reguli simple. El a spus
+                că lucrurile considerate de obicei „aspre”, „dezordine” sau „haotice”, cum ar fi norii sau țărmurile,
+                aveau de fapt un „grad de ordine”. Cariera sa de cercetare axată pe matematică și geometrie a
+                inclus contribuții la domenii precum fizica statistică, meteorologia, hidrologia, geomorfologia,
+                anatomia, taxonomia, neurologia, lingvistică, tehnologia informației, grafică pe computer, economie,
+                geologie, medicină, cosmologie fizică, inginerie, teoria haosului, econofizică, metalurgie și științele
+                sociale.<br>
+                Spre sfârșitul carierei sale, a fost profesor sterling de științe matematice la Universitatea Yale,
+                unde a fost cel mai vechi profesor din istoria Yale care a primit funcția de titular. Mandelbrot a
+                ocupat, de asemenea, funcții la Laboratorul Național Pacific Nord-Vest, Universitatea Lille Nord de
+                France, Institutul pentru Studii Avansate și Centrul Național al Cercetării Științifice. În timpul
+                carierei sale, a primit peste 15 doctorate onorifice și a participat la numeroase reviste științifice,
+                alături de câștigarea a numeroase premii. Autobiografia sa, The Fractalist: Memoir of a Scientific
+                Maverick, a fost publicată postum în 2012.<br>
+                <iframe class="if" width="500" height="315" src="https://www.youtube.com/embed/ay8OMOsf6AQ"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <figcaption class="descriere_img">Benoit Mandelbrot la o conferință TED</figcaption>
+            </article>
+        </section>
+        <section class="content">
+            <h2 class="titluri_sectiuni">
+                Istoric
+            </h2>
+            <p>
+                Setul Mandelbrot își are originea în dinamica complexă, un domeniu investigat pentru prima dată de
+                matematicienii francezi Pierre Fatou și Gaston Julia la începutul secolului al XX-lea. Această fractală
+                a fost definită și desenată pentru prima dată în 1978 de Robert W. Brooks și Peter Matelski ca parte a
+                unui studiu al grupurilor Kleiniene. La 1 martie 1980, la IBM e Thomas J. Watson, Centrul de
+                Cercetare în Yorktown Heights, New York, Benoit Mandelbrot primul a văzut o vizualizare a setului.<br>
+                Mandelbrot a studiat spațiul parametru al trinom într - un articol care a apărut în 1980. Studiul
+                matematic al Mandelbrot într - adevăr a început cu munca de matematicieni Adrien Douady și John H.
+                Hubbard (1985), care a stabilit mai multe a proprietăților sale fundamentale și a numit setul în
+                cinstea lui Mandelbrot pentru munca sa influentă în geometria fractală.<br>
+                Matematicienii Heinz-Otto Peitgen și Peter Richter au devenit bine cunoscuți pentru promovarea setului
+                cu fotografii, cărți (1986), și o expoziție în turneu internațional a German Goethe-Institut (1985).
+                Articolul de copertă din august 1985 Scientific American a introdus un public larg în algoritmul de
+                calcul al setului Mandelbrot. Coperta conținea o imagine situată la -0.909 + -0.275i și a fost creată
+                de Peitgen și colab. Setul Mandelbrot a devenit proeminent la mijlocul anilor 1980 ca o
+                demonstrație de grafică pe computer, când computerele personale au devenit suficient de puternice
+                pentru a trage și afișa setul la rezoluție înaltă.<br>
+
+                Opera lui Douady și Hubbard a coincis cu o creștere uriașă a interesului pentru dinamica complexă și
+                matematica abstractă , iar studiul setului Mandelbrot a fost de atunci o piesă centrală a acestui
+                domeniu. O listă exhaustivă a tuturor celor care au contribuit la înțelegerea acestui set de atunci este
+                lungă, dar ar include Mikhail Lyubich, Curt McMullen , John Milnor , Mitsuhiro Shishikura și
+                Jean-Christophe Yoccoz .
+            </p>
+            <img class="fi" src="https://thumbs.gfycat.com/AlarmedThriftyDikkops-max-1mb.gif">
+            <figcaption class="descriere_img">Fig.2 - Animatie set Mandelbrot prin zoom-in</figcaption>
+            <img class="fi"
+                src="https://64.media.tumblr.com/88b297e92b6e0c7bcbb4277328cba3b7/tumblr_p52w5fXS5m1vl4diro1_540.gifv">
+            <figcaption class="descriere_img">Fig.3 - Alta animatie a setului Mandelbrot prin zoom-in</figcaption>
+            <aside>Pentru mai multe animații acesați acest link :
+                <a href="https://fractalzooms.tumblr.com/post/171525432349/i-redid-this-one-with-some-new-colors">Infinite
+                    Fractal Zoom.</a>.</aside>
+        </section>
+        <section class="content">
+            <h2 class="titluri_sectiuni">
+                Galerie de imagini
+            </h2>
+            <p>
+            <div class="grid-container" id="myDIV" onclick="grid_color_changer()">
+                <div class="grid-item" id="first_img"><img class="grid_img"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Mandel_zoom_00_mandelbrot_set.jpg/180px-Mandel_zoom_00_mandelbrot_set.jpg">
+                </div>
+                <div class="grid-item"><img class="grid_img"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Mandel_zoom_01_head_and_shoulder.jpg/180px-Mandel_zoom_01_head_and_shoulder.jpg">
+                </div>
+                <div class="grid-item"><img class="grid_img"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Mandel_zoom_02_seehorse_valley.jpg/180px-Mandel_zoom_02_seehorse_valley.jpg">
+                </div>
+                <div class="grid-item"><img class="grid_img"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Mandel_zoom_03_seehorse.jpg/180px-Mandel_zoom_03_seehorse.jpg">
+                </div>
+                <div class="grid-item"><img class="grid_img"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Mandel_zoom_04_seehorse_tail.jpg/180px-Mandel_zoom_04_seehorse_tail.jpg">
+                </div>
+                <div class="grid-item"><img class="grid_img"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Mandel_zoom_05_tail_part.jpg/180px-Mandel_zoom_05_tail_part.jpg">
+                </div>
+                <div class="grid-item"><img class="grid_img"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Mandel_zoom_06_double_hook.jpg/180px-Mandel_zoom_06_double_hook.jpg">
+                </div>
+                <div class="grid-item"><img class="grid_img"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Mandel_zoom_07_satellite.jpg/180px-Mandel_zoom_07_satellite.jpg">
+                </div>
+                <div class="grid-item"><img class="grid_img"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Mandel_zoom_08_satellite_antenna.jpg/180px-Mandel_zoom_08_satellite_antenna.jpg">
+                </div>
+                <div class="grid-item"><img class="grid_img"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Mandel_zoom_09_satellite_head_and_shoulder.jpg/180px-Mandel_zoom_09_satellite_head_and_shoulder.jpg">
+                </div>
+                <div class="grid-item"><img class="grid_img"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Mandel_zoom_10_satellite_seehorse_valley.jpg/180px-Mandel_zoom_10_satellite_seehorse_valley.jpg">
+                </div>
+                <div class="grid-item"><img class="grid_img"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Mandel_zoom_11_satellite_double_spiral.jpg/180px-Mandel_zoom_11_satellite_double_spiral.jpg">
+                </div>
+                <div class="grid-item"><img class="grid_img"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Mandel_zoom_12_satellite_spirally_wheel_with_julia_islands.jpg/180px-Mandel_zoom_12_satellite_spirally_wheel_with_julia_islands.jpg">
+                </div>
+                <div class="grid-item"><img class="grid_img"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Mandel_zoom_13_satellite_seehorse_tail_with_julia_island.jpg/180px-Mandel_zoom_13_satellite_seehorse_tail_with_julia_island.jpg">
+                </div>
+                <div class="grid-item"><img class="grid_img"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Mandel_zoom_14_satellite_julia_island.jpg/180px-Mandel_zoom_14_satellite_julia_island.jpg">
+            </div>
+            </div>
+            <p>
+                <button><i onclick="del()" class="fa fa-eyedropper" style="font-size:24px"></i></button>
+            </p>
+            </p>
+        </section>
+    </div>
+    <div>
+    </div>
+    <div class="footer">
+        <a href="https://www.facebook.com/FractalHorizon" class="fa fa-facebook"></a>
+        <a href="https://www.google.com/search?sxsrf=ALeKk02v51aGLUM78jShLGJ39jIOIPVY5Q%3A1606328908254&ei=TKK-X-fxDqWsrgSIh7vABQ&q=fractals&oq=fractals&gs_lcp=CgZwc3ktYWIQAzIECCMQJzIECCMQJzIFCAAQywEyBQgAEMsBMgIIADIFCAAQywEyBQgAEMsBMgIIADIFCAAQywEyBQgAEMsBOgYIIxAnEBM6CAgAEBYQHhATOgUIABCxA1C7FFjgFmCoGmgAcAB4AIABf4gB8QKSAQMwLjOYAQCgAQGqAQdnd3Mtd2l6wAEB&sclient=psy-ab&ved=0ahUKEwjnx9-_qZ7tAhUllosKHYjDDlgQ4dUDCA0&uact=5"
+            class="fa fa-google"></a>
+        <a href="https://www.instagram.com/fascinating.fractals/" class="fa fa-instagram"></a>
+        <a href="https://www.reddit.com/r/FractalPorn/" class="fa fa-reddit"></a>
+    </div>
+    <script src="Script_First_page.js"></script>
+</body>
+
+</html>

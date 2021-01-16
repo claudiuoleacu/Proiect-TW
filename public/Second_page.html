@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Introducere în lumea fractalilor">
+    <meta name="keywords" content="Fractali, Teoria haosului">
+    <meta name="author" content="Oleacu Claudiu-Angel">
+    <title>Triunghiul lui Sierpinski</title>
+    <link href="Style_First_page.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Vollkorn&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Chonburi&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <h1 id="titlu">
+                Fractals Wonderland
+            </h1>
+            <p class="citat" id = "citat_mod">
+                "Norii nu sunt sfere, muntii nu sunt conuri, liniile de coasta nu sunt cercui,<br>
+                iar scoarta copacilor nu este neteda si nici fulgerul nu cade în linii drepte."
+            </p>
+            <p class="citat">
+                Benoit Mandelbrot
+            </p>
+        </div>
+    </header>
+
+    <div class="area">
+        <ul class="shapes">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+    <nav class="topnav" id="navbar">
+        <li><a href="First_page.html"><i class="fa fa-home"></i></a></li>
+        <li><a href="Second_page.html" id="pg2" class="active">Triunghiul lui Sierpinski</a></li>
+        <li><a href="Third_page.html" id="pg3">Setul Mandelbot</a></li>
+        <li><a href="form_bs.html" id="pg4">Formular</a></li>
+        <li class="dropdown">
+            <a class="dropbtn" href="javascript:void(0)" style="width: 120px;">Link-uri utile<i
+                    class="fa fa-lightbulb-o"></i></a>
+            <div class="dropdown-content">
+                <a href="https://ro.wikipedia.org/wiki/Fractal">Wikipedia</a>
+                <a href="https://fractalfoundation.org/resources/what-are-fractals/">Fractal Foundation</a>
+                <a href="https://mathigon.org/course/fractals/introduction">Mathigon</a>
+            </div>
+        </li>
+    </nav>
+
+    <div class="row">
+        <section class="content">
+            <h2 class="titluri_sectiuni">
+                Ce este triunghiul lui Sierpinski? Cine a fost Sierpinski?
+            </h2>
+            <article>
+                Triunghiul Sierpinski, de asemenea, numit garnitura Sierpinski sau sita
+                Sierpinski, este un fractal set atractiv fixat cu forma generală a unui triunghi echilateral,
+                subdivizate recursiv în triunghiuri echilaterale mai mici. Construit inițial ca o curbă, acesta este
+                unul dintre exemplele de bază ale seturilor auto-similare - adică este un model generat matematic, care
+                este reproductibil la orice mărire sau reducere. Acesta poartă numele matematicianului polonez Wacław
+                Sierpiński, dar a apărut ca model decorativ cu multe secole înainte de opera lui Sierpiński.
+            </article>
+            <h3>Wacław Sierpiński</h3>
+            <article>
+                Wacław Franciszek Sierpiński (14 martie 1882 - 21 octombrie 1969) a fost un matematician polonez. El a
+                fost cunoscut
+                pentru contribuțiile la teoria mulțimilor (cercetări privind axioma alegerii și ipoteza continuumului),
+                teoria numerelor, teoria funcțiilor și topologia. A publicat peste 700 de lucrări și 50 de cărți.<br>
+                <img id="fiS" src="https://liceum.slupsk.pl/wordpress/wp-content/uploads/2014/11/sierpinski.jpg">
+                <figcaption class="descriere_img">Fig.1 - Wacław Sierpiński</figcaption>
+                În 1907, Sierpiński s-a interesat pentru prima dată de teoria mulțimilor când a dat peste o teoremă care
+                a afirmat că punctele din plan ar putea fi specificate cu o singură coordonată. El i-a scris lui Tadeusz
+                Banachiewicz (pe atunci la Göttingen), întrebând cum este posibil un astfel de rezultat. El a primit
+                răspunsul cu un singur cuvânt „Cantor”. Sierpiński a început să studieze teoria mulțimilor și, în
+                1909, a susținut primul curs de prelegere dedicat în întregime subiectului.
+
+                Sierpiński a menținut un volum de lucrări de cercetare și cărți. În anii 1908-1914, când a predat la
+                Universitatea din Lwów , a publicat trei cărți pe lângă multe lucrări de cercetare. Aceste cărți au fost
+                Teoria numerelor iraționale (1910), Schița teoriei seturilor (1912) și Teoria numerelor (1912).<br>
+
+                Când a început Primul Război Mondial în 1914, Sierpiński și familia sa se aflau în Rusia. Pentru a
+                evita persecuția obișnuită pentru străinii polonezi, Sierpiński a petrecut restul anilor de război la
+                Moscova colaborând cu Nikolai Luzin. Împreună au început studiul seturilor analitice. În 1916,
+                Sierpiński a dat primul exemplu de număr absolut normal.
+
+                La sfârșitul primului război mondial, în 1918, Sierpiński s-a întors la Lwów. Cu toate acestea, la
+                scurt timp după preluarea numirii sale din nou în Lwów, i sa oferit un post la Universitatea din
+                Varșovia, pe care l-a acceptat. În 1919 a fost promovat profesor. Și-a petrecut restul vieții la
+                Varșovia.<br>
+
+                În timpul războiului polono-sovietic (1919-1921), Sierpinski a ajutat la pauză sovietică din Rusia
+                cifruri pentru polonez Major General e agenție criptologică .<br>
+
+                În 1920, Sierpiński, împreună cu Zygmunt Janiszewski și fostul său elev Stefan Mazurkiewicz, au fondat
+                revista matematică Fundamenta Mathematicae. Sierpiński a editat revista, specializată în lucrări despre
+                teoria mulțimilor.<br>
+
+                În această perioadă, Sierpiński a lucrat predominant la teoria mulțimilor, dar și la topologia
+                punctelor și funcțiile unei variabile reale. În teoria mulțimilor, el a contribuit la axioma alegerii
+                și la ipoteza continuumului. El a demonstrat că teoria seturilor Zermelo – Fraenkel împreună cu ipoteza
+                continuumului generalizat implică Axioma de alegere. De asemenea, a lucrat la ceea ce este acum
+                cunoscut sub numele de curba Sierpiński. Sierpiński a continuat să colaboreze cu Luzin la
+                investigațiile seturilor analitice și proiective. Munca sa asupra funcțiilor unuivariabila reală include
+                rezultate pe serii funcționale, diferențialitatea funcțiilor și clasificarea lui Baire.<br>
+
+                Sierpiński s-a retras în 1960 ca profesor la Universitatea din Varșovia, dar a continuat până în 1967
+                să susțină un seminar despre teoria numerelor la Academia de Științe din Polonia. De asemenea, a
+                continuat activitatea editorială ca redactor-șef al Acta Arithmetica și ca membru al consiliului
+                editorial al Rendiconti del Circolo Matematico di Palermo, Composito Matematica și Zentralblatt für
+                Mathematik.
+
+                În 1964 a fost unul dintre semnatarii așa-numitei Scrisori din 34 către premierul Józef Cyrankiewicz cu
+                privire la libertatea de cultură.<br>
+
+                Sierpiński este înmormântat la cimitirul Powązki din Varșovia, Polonia .
+            </article>
+        </section>
+        <section class="content">
+            <h2 class="titluri_sectiuni">
+                Construirea triunghiului
+            </h2>
+            <h3>
+                Eliminarea triunghiurilor
+            </h3>
+            <p>
+                Triunghiul Sierpinski poate fi construit dintr-un triunghi echilateral prin îndepărtarea repetată a
+                subseturilor triunghiulare:
+            <ol start="1" class="lista_ord">
+                <li>1. Începeți cu un triunghi echilateral.</li>
+                <li>2. Împărțiți-l în patru triunghiuri echilaterale congruente mai mici și îndepărtați triunghiul
+                    central.
+                </li>
+                <li>3. Repetați pasul 2 cu fiecare dintre cele mai mici triunghiuri restante la infinit.</li>
+            </ol>
+            </p>
+            <div>
+                <iframe class="if" src="sierpinski_triangle_p5/sier_trig.html" title="Iframe sier_trig"></iframe>
+                <figcaption class="descriere_img">Fig.2 - Reprezentarea unei generări de triunghi Sierpinski
+                </figcaption>
+            </div>
+            <aside><i>Fiecare triunghi eliminat este topologic un set deschis. Acest proces de îndepărtare
+                    recursivă a triunghiurilor este un exemplu de regulă de subdiviziune finită.</i></aside>
+            <h3>
+                Micșorare și duplicare
+            </h3>
+            <p>
+                Aceeași secvență de forme, care converg spre triunghiul Sierpinski, poate fi alternativ generată de
+                următorii pași:
+            <ol start="1" class="lista_ord">
+                <li>1. Începeți cu orice triunghi dintr-un plan (orice regiune închisă și delimitată în plan va
+                    funcționa efectiv). Triunghiul canonic Sierpinski folosește un triunghi echilateral cu o bază
+                    paralelă cu axa orizontală.</li>
+                <li>2. Micsorați triunghiul la jumătate din înălțime și la jumătate din lățime, faceți trei copii și
+                    poziționați cele trei triunghiuri
+                    micșorate astfel încât fiecare
+                    triunghi să atingă celelalte două triunghiuri la un colț. Rețineți apariția găurii
+                    centrale - deoarece cele trei triunghiuri micșorate pot acoperi între ele numai trei sferturi din
+                    zona originalului. (Găurile sunt o caracteristică importantă a triunghiului lui Sierpinski.)
+                </li>
+                <li>3. Repetați pasul 2 cu fiecare dintre triunghiurile mai mici .</li>
+            </ol>
+            </p>
+            <img class="fi" id="myImg" src="https://www.oftenpaper.net/img/siermathgb3.png">
+            <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img01">
+                <div id="caption"></div>
+            </div>
+            <figcaption class="descriere_img">Fig.3 - Iterații ale algoritmului de generare</figcaption>
+        </section>
+        <section class="content">
+            <h2 class="titluri_sectiuni">
+                Chaos theory
+            </h2>
+            <p>
+                Dacă se ia un punct și se aplică fiecare dintre transformările <i>d</i><sub>A</sub>,
+                <i>d</i><sub>B</sub> și <i>d</i><sub>C</sub> la întâmplare, punctele
+                rezultate vor fi dense în triunghiul Sierpinski, astfel încât următorul algoritm va genera din nou
+                aproximări arbitrare apropiate de acesta.
+
+                Începeți prin etichetarea <b>p</b><sub>1</sub>, <b>p</b><sub>2</sub> și <b>p</b><sub>3</sub> drept
+                colțurile triunghiului Sierpinski și un punct aleatoriu
+                <b>v</b><sub>1</sub>. Setați <span><b>v</b><sub><i>n</i>+1</sub> = <span
+                        style="display:inline-block; vertical-align:-0.5em; font-size:85%; text-align:center;"><span
+                            class="num" style="display:block; line-height:1em; margin:0 0.1em;">1</span><span
+                            class="slash visualhide"></span><span class="den"
+                            style="display:block; line-height:1em; margin:0 0.1em; border-top:1px solid;">2</span></span>(<b>v</b><sub><i>n</i></sub>
+                    + <b>p</b><sub><i>r<sub>n</sub></i></sub>)</span>, unde <i>r<sub>n</sub></i> este un număr aleatoriu
+                1, 2 sau 3.
+                Desenați punctele <b>v</b><sub>1</sub> până la <b>v</b><sub>∞</sub> . Dacă
+                primul punct <b>v</b><sub>1</sub> a fost un punct pe triunghiul Sierpiński, atunci toate punctele
+                <b>v</b><sub><i>n</i></sub> se află pe
+                triunghiul Sierpinski. Dacă primul punct <b>v</b><sub>1</sub> care se află în perimetrul triunghiului nu
+                este un punct al
+                triunghiului Sierpinski, niciunul dintre punctele <b>v</b><sub><i>n</i></sub> nu se află pe triunghiul
+                Sierpinski, cu toate
+                acestea vor converge asupra triunghiului. Dacă <b>v</b><sub>1</sub> este în afara triunghiului, singurul
+                mod în care <b>v</b><sub><i>n</i></sub>
+                va ateriza pe triunghiul real este dacă v n este pe ceea ce ar face parte din triunghi, dacă triunghiul
+                ar fi infinit de mare. Sau mai simplu :
+            <ol class="lista_ord">
+                <li>1. Ia trei puncte într-un plan pentru a forma un triunghi, nu trebuie să-l desenezi.</li>
+                <li>2. Selectați aleatoriu orice punct din interiorul triunghiului și considerați că poziția dvs.
+                    curentă.
+                </li>
+                <li>3. Selectați aleatoriu oricare dintre cele trei puncte de vârf.</li>
+                <li>4. Mutați jumătate din distanța de la poziția dvs. curentă la vârful selectat.</li><br>
+                <li>5. Trageți poziția curentă. </li><br>
+                <li>6. Repetați de la pasul 3. </li>
+            </ol>
+            Această metodă este numită și jocul haosului și este un exemplu de sistem funcțional iterat . Puteți începe
+            din orice punct din afara sau din interiorul triunghiului și, în cele din urmă, ar forma garnitura
+            Sierpinski cu câteva puncte rămase (dacă punctul de plecare se află pe conturul triunghiului, nu există
+            puncte rămase). Cu creionul și hârtia, se formează o scurtă schiță după plasarea a aproximativ o sută de
+            puncte, iar detaliile încep să apară după câteva sute. O versiune interactivă a jocului haos poate fi găsită
+            <a href="https://scratch.mit.edu/projects/170702288/#player">aici.</a>.<br>
+            <img class="fi" src="https://upload.wikimedia.org/wikipedia/commons/b/b6/Sierpinski_Chaos.gif">
+            <figcaption class="descriere_img">Fig.4 - Generare prin haos</figcaption>
+            </p>
+            <h3>Automate celulare</h3>
+            <p>
+                Triunghiul Sierpinski apare și în anumite automate celulare (cum ar fi Regula 90 , inclusiv în cele
+                referitoare la Jocul vieții lui Conway . De exemplu, automatul celular Life-like B1 / S12 atunci când
+                este aplicat unei singure celule va genera patru aproximări ale triunghiului Sierpinski. O linie
+                groasă cu o celulă foarte lungă în viața standard va crea două triunghiuri Sierpinski oglindite.
+                Diagrama timp-spațiu a unui model de replicator într-un automat celular de multe ori seamănă cu un
+                triunghi Sierpinski, cum ar fi cel al replicatorului comun din HighLife. Triunghiul Sierpinski
+                poate fi găsit și în automatul Ulam-Warburton și automatul Hex-Ulam-Warburton.
+            </p>
+            <img class="fi" src="https://upload.wikimedia.org/wikipedia/commons/2/28/Tetraedre_fractal.jpg">
+            <figcaption class="descriere_img">Fig.5 - Tetraedru Sierpinski</figcaption>
+            <p>
+                <button onclick="show_date()"><i class="fa fa-calendar" style="font-size:24px"></i></button>
+            </p>
+            <p id="data_afis">
+            </p>
+        </section>
+    </div>
+    <div>
+    </div>
+    <div class="footer">
+        <a href="https://www.facebook.com/FractalHorizon" class="fa fa-facebook"></a>
+        <a href="https://www.google.com/search?sxsrf=ALeKk02v51aGLUM78jShLGJ39jIOIPVY5Q%3A1606328908254&ei=TKK-X-fxDqWsrgSIh7vABQ&q=fractals&oq=fractals&gs_lcp=CgZwc3ktYWIQAzIECCMQJzIECCMQJzIFCAAQywEyBQgAEMsBMgIIADIFCAAQywEyBQgAEMsBMgIIADIFCAAQywEyBQgAEMsBOgYIIxAnEBM6CAgAEBYQHhATOgUIABCxA1C7FFjgFmCoGmgAcAB4AIABf4gB8QKSAQMwLjOYAQCgAQGqAQdnd3Mtd2l6wAEB&sclient=psy-ab&ved=0ahUKEwjnx9-_qZ7tAhUllosKHYjDDlgQ4dUDCA0&uact=5"
+            class="fa fa-google"></a>
+        <a href="https://www.instagram.com/fascinating.fractals/" class="fa fa-instagram"></a>
+        <a href="https://www.reddit.com/r/FractalPorn/" class="fa fa-reddit"></a>
+    </div>
+    <script src="Script_First_page.js"></script>
+</body>
+
+</html>
